@@ -72,7 +72,7 @@ const createEmployee = () => {
       },
       {
         type: "input",
-        name: "univeristy",
+        name: "university",
         message: "Enter the intern's university",
         when: (input) => input.employee === "Intern",
       },
@@ -102,7 +102,7 @@ const createEmployee = () => {
       }
 
       employeeArray.push(teamEmployee);
-      console.log(employeeArray);
+
       if (confirmCreateEmployee) {
         return createEmployee(employeeArray);
       } else {
