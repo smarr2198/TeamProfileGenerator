@@ -51,7 +51,7 @@ createProfileHTML = (data) => {
 
   for (let i = 0; i < data.length; i++) {
     const employeeData = data[i];
-    const employeeMember = employeeData.getEmployee();
+    const employeeMember = employeeData.getRole();
 
     if (employeeMember === "Manager") {
       const managerProfile = createManagerProfile(employeeData);
@@ -70,7 +70,7 @@ createProfileHTML = (data) => {
   }
   const profileCards = profileArray.join("");
   const createProfile = createProfilePage(profileCards);
-  console.log(profileArray);
+
   return createProfile;
 };
 
