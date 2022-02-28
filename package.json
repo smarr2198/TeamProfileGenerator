@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --verbose test/*"
+    "test": "jest --verbose test/*",
+    "managerTest": "jest --verbose test/manager.test.js",
+    "internTest": "jest --verbose test/intern.test.js"
   },
   "author": "Stephen Marr",
   "license": "ISC",
